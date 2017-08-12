@@ -1,0 +1,87 @@
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="text-center">Filter: </h1>
+            <hr>
+            <input type="textbox" class="text-center" placeholder="Search for Skills">
+        </div>
+        <div class="col-md-8">
+            <h1 class="text-center">People who need your help!</h1>
+            <hr>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="card" ng-repeat="user in users">
+                        <div class="col-md-2">
+                            <img class="img-responsive thumbnail" src="{{user.img}}" alt="">
+                        </div>
+                        <br>
+                        <div class="col-md-6">
+                            <h3>{{user.name}}</h3>
+                            <input type="date" value="2017-08-02">
+                            <input type="time" value="13:00">
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn btn-primary" href="/learnmore">Learn More!</a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="img-responsive" class="navbar-brand" href="/"><img src="/img/logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="black-text" href="/profile"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                <li><a class="black-text" href="/profile"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li><a class="black-text" href="/feed">Give Help</a></li>
+                <li><a class="black-text" href="/request">Get Help</a></li>
+                <li><a class="black-text" href="/">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="text-center">Filter: </h1>
+            <input type="textbox" class='text-center btn-block' placeholder="Search" ng-model="searchTerm">
+        </div>
+        <div class="col-md-8">
+            <h1 class="text-center">People who need your help!</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row-fluid">
+        <div class="card" ng-repeat="user in users | filter: searchTerm">
+            <div class="col-md-2">
+            <img src="/img/Verified.png" alt="">
+                <img class="img-responsive img-thumbnail" src="{{user.img}}" alt="">
+            </div>
+            <div class="container-fluid">
+                <div class="">
+                    <div class="col-md-2">
+                        <h1>{{user.name}}</h1>
+                    </div>
+                    <h1>I need help with <span class="blue-text">{{user.tags}}</span></h1>
+                    <a class="btn btn-primary" href="/learnmore">Learn More</a>
+                </div>
+            </div>
+            <hr>
+            
+        </div>
+
+    </div>
+</div>

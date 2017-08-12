@@ -1,0 +1,86 @@
+<!-- <div id="banner" class="container-fluid">
+    <div class="row center">
+        <div class="col-xs-12 col-md-12">
+            <h1 class="text-center display animated fadeInDown">The<img class="animated infinite pulse" src="img/title.png" alt="">Daily News</h1>
+            <h1 class="text-center">
+                <h2 class="animated fadeInUp">Get the <strong>latest news</strong> on every <strong>UFC</strong> moment. </h2>
+            </h1>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container-fluid">
+    <div class="row wow zoomIn">
+        <a href="youtube.com/channels/{{youtube}}">ufc</a>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row wow zoomIn">
+        <uib-carousel interval="myInterval">
+            <uib-slide class="slide" ng-repeat="slide in slides" active="active" index="$index">
+                <img class="slide center-block" ng-src="{{slide.image}}">
+            </uib-slide>
+        </uib-carousel>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="container">
+    <div class="row center-block">
+    <legend class="text-center text-info display wow fadeIn">Title Holders</legend>
+        <div ng-repeat="title in title">
+            <div class="col-md-6">
+                <div id="banner" class="card wow fadeInUpBig">
+                    <h1 class="text-center"><strong>{{title.weight_class}}</strong></h1>
+                    <h2 class="text-center">{{title.first_name}} <strong>"{{title.nickname}}"</strong> {{title.last_name}}</h2>
+                    <h3 class="white-text text-center"><strong>Wins: <span class="blue-text">{{title.wins}} </span> Losses: <span class="red-text">{{title.losses}}</span></strong></h3>
+                    <img class="img-responsive title-holder center-block" ng-src="{{title.belt_thumbnail}}" alt="">
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+ -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="img-responsive" class="navbar-brand" href="/"><img src="/img/logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="black-text" href="/login">Log in</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="banner" class="container-fluid">
+    <div class="row">
+        <div class="center">
+            <div id="home">
+                <div class="col-md-4">
+                    <p class="text-primary animated fadeIn">IHelp connects you with people or groups looking to share thei skills with those in need. From mowing lawns to picking up groceries. You have the option to barter and learn new skills with those you are assisting, or simply give with nothing expected n return! <strong class="green-text">Get Start Today</strong></p>
+                </div>
+                <h1 class="black-text">Sign Up Now</h1>
+                <div class="col-md-4">
+                    <input type="text" class="black-text" placeholder="First Name">
+                    <input type="text" class="black-text" placeholder="Last Name">
+                    <input type="password" class="black-text" placeholder="Password">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="black-text" placeholder="Email">
+                    <input type="text" class="black-text" placeholder="City">
+                </div>
+                <a href="/profile" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</div>
